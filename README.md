@@ -2,6 +2,8 @@
 
 firefox logger is a firefox activity and network logging tool built with typescript, node.js, sqlite, and a firefox extension.
 
+![](o.png)
+
 ## features
 
 - firefox activity logging
