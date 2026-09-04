@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Firefox Logger",
+  "version": "1.0.0",
+  "description": "Firefox activity and network monitoring extension",
+  "permissions": [
+    "webRequest",
+    "tabs",
+    "downloads",
+    "nativeMessaging"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "type": "module"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "firefox-logger@local"
+    }
+  }
+}
