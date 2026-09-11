@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Firefox Logger</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header>
+    <div>
+        <h1>Firefox Logger</h1>
+        <span id="connection">● Disconnected</span>
+    </div>
+    <div class="actions">
+        <button id="simple">Simple</button>
+        <button id="detailed" class="active">Detailed</button>
+        <button id="clear">Clear</button>
+    </div>
+</header>
+
+
+
+<section class="toolbar">
+    <input id="search" placeholder="Search URL, method, status...">
+    <select id="method">
+        <option value="">All methods</option>
+        <option>GET</option>
+        <option>POST</option>
+        <option>PUT</option>
+        <option>PATCH</option>
+        <option>DELETE</option>
+    </select>
+    <select id="status">
+        <option value="">All status</option>
+        <option value="2">2xx</option>
+        <option value="3">3xx</option>
+        <option value="4">4xx</option>
+        <option value="5">5xx</option>
+    </select>
+</section>
+
+<main>
+    <section id="list"></section>
+    <aside id="details">
+        <div class="empty">Select a request</div>
+    </aside>
+</main>
+
+<script src="/app.js"></script>
+</body>
+</html>

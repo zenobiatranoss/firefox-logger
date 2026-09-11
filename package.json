@@ -1,0 +1,36 @@
+{
+  "name": "firefox-logger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest",
+    "dev": "tsx src/cli/main.ts",
+    "build": "tsc",
+    "native-host": "node dist/cli/native-host.js",
+    "start": "npm run build && npm run native-host",
+    "install-host": "sh scripts/install-host.sh",
+    "server": "node dist/cli/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/express": "^5.0.6",
+    "@types/firefox-webext-browser": "^143.0.0",
+    "@types/node": "^26.4.0",
+    "@types/ws": "^8.18.1",
+    "esbuild": "^0.28.2",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.11",
+    "wscat": "^6.1.0"
+  },
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "express": "^5.2.1",
+    "ws": "^8.21.3"
+  },
+  "type": "module"
+}
