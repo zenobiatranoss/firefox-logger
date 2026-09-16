@@ -9,7 +9,7 @@ cat > "$HOME/.mozilla/native-messaging-hosts/firefox_logger.json" <<JSON
   "path": "$PWD/native-host.sh",
   "type": "stdio",
   "allowed_extensions": [
-    "firefox_logger@local"
+    "firefox-logger@local"
   ]
 }
 JSON
